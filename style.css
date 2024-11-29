@@ -1,0 +1,145 @@
+/* Main styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Parkinsans', sans-serif;
+    ;
+    color: #333;
+}
+
+header,
+section,
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation menu styles */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: white;
+    }
+
+    .nav-list li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+}
+
+.slide-container img {
+    width: 100%;
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Gallery and images styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img,
+.slide-container img,
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Ensures images in text sections are responsive */
+section img {
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+.parkinsans-<uniquifier> {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
